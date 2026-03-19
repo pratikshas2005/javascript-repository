@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function </title>
+</head>
+<body>
+    <script>
+    function calculateArea(length, width) {
+  return length * width;
+}
+
+
+console.log(calculateArea(5, 3)); 
+    
+
+function sumNumbers(...numbers) {
+  let sum = 0;
+  for (let num of numbers) {
+    sum += num;
+  }
+  return sum;
+}
+
+
+function greetUsers(...names) {
+  return "Hello " + names.join(", ");
+}
+
+
+console.log(greetUsers("Pratiksha", "Rahul", "Amit"));
+
+console.log(sumNumbers(1, 2, 3, 4)); 
+
+function fizzBuzz(n) {
+  for (let i = 1; i <= n; i++) {
+    if (i % 15 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+
+fizzBuzz(15);
+
+function isPalindrome(str) {
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("hello")); 
+
+
+
+  </script>  
+</body>
+</html>
